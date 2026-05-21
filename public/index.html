@@ -1,6 +1,17 @@
 <!doctype html>
 <html>
 	<head>
+		<script>
+  // 1. 탭 제목 변경
+  document.title = "My Drive - Google Drive";
+
+  // 2. 탭 아이콘 변경
+  var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+  link.type = 'image/x-icon';
+  link.rel = 'shortcut icon';
+  link.href = 'https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png';
+  document.getElementsByTagName('head')[0].appendChild(link);
+</script>
 		<meta charset="utf-8" />
 		<meta
 			name="viewport"
